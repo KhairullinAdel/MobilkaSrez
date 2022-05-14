@@ -1,0 +1,15 @@
+﻿using MobilkaSrez.ViewModels;
+using System.ComponentModel;
+using Xamarin.Forms;
+
+namespace MobilkaSrez.Views
+{
+    public partial class ItemDetailPage : ContentPage
+    {
+        public ItemDetailPage()
+        {
+            InitializeComponent();
+            BindingContext = new ItemDetailViewModel();
+        }
+    }
+}

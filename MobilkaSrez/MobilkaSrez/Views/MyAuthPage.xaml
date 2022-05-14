@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobilkaSrez.Views.MyAuthPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Authpage"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"/>
+            <Entry x:Name="Login"
+                   HorizontalTextAlignment="Center"
+                   Margin="10, 0"
+                   Placeholder="Login"/>
+            <Entry x:Name="Password"
+                   HorizontalTextAlignment="Center"
+                   Margin="10, 0"
+                   Placeholder="Password"/>
+            <Label x:Name="ToAuthPage"
+                   Text="Don't have an account yet?"
+                   TextColor="SkyBlue">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Button x:Name="AuthButton"
+                    Text="Reg"
+                    Clicked="AuthButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
